@@ -43,16 +43,22 @@ var fetch = function(url, next){
 // Fetch the first url
 fetch(process.argv[2], function(err,data){
 	// ignore error
+
+	// output result
 	console.log(data)
 
 	// Fetch the second url
 	fetch(process.argv[3], function(err,data){
 		// ignore error
+
+		// output result
 		console.log(data)
 
 		// Fetch the third url
 		fetch(process.argv[4], function(err,data){
 			// ignore error
+
+			// output result
 			console.log(data)
 		})
 	})

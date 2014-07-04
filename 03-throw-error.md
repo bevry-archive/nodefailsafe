@@ -52,17 +52,26 @@ module.exports = function(url, next){
 // 03-app.js
 var fetch = require('./fetch.js')
 fetch(process.argv[2], function(err,data){
+	// throw err if we have it
 	if (err)  throw err
+
+	// output result
 	console.log(data)
 
 	// Fetch the second url
 	fetch(process.argv[3], function(err,data){
+		// throw err if we have it
 		if (err)  throw err
+
+		// output result
 		console.log(data)
 
 		// Fetch the third url
 		fetch(process.argv[4], function(err,data){
+			// throw err if we have it
 			if (err)  throw err
+
+			// output result
 			console.log(data)
 		})
 	})

@@ -34,7 +34,7 @@ fetch(process.argv[2], function(err,data){
 	if (completed1)  throw new Error('first fetch already completed')
 	completed1 = true
 
-	// check for error
+	// throw err if we have it
 	if (err)  throw err
 
 	// output result
@@ -46,7 +46,7 @@ fetch(process.argv[2], function(err,data){
 		if (completed2)  throw new Error('second fetch already completed')
 		completed2 = true
 
-		// check for error
+		// throw err if we have it
 		if (err)  throw err
 
 		// output result
@@ -58,7 +58,7 @@ fetch(process.argv[2], function(err,data){
 			if (completed3)  throw new Error('third fetch already completed')
 			completed3 = true
 
-			// check for error
+			// throw err if we have it
 			if (err)  throw err
 
 			// output result

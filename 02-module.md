@@ -38,16 +38,22 @@ module.exports = function(url, next){
 var fetch = require('./fetch.js')
 fetch(process.argv[2], function(err,data){
 	// ignore error
+
+	// output result
 	console.log(data)
 
 	// Fetch the second url
 	fetch(process.argv[3], function(err,data){
 		// ignore error
+
+		// output result
 		console.log(data)
 
 		// Fetch the third url
 		fetch(process.argv[4], function(err,data){
 			// ignore error
+
+			// output result
 			console.log(data)
 		})
 	})
