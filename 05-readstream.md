@@ -21,16 +21,16 @@ No hints this time. You got this.
 module.exports = function(stream, next){
 	var completed = false
 	var data = ''
-	response.on('data', function(chunk){
+	stream.on('data', function(chunk){
 		data += chunk.toString()
 	})
-	response.on('end', function(){
+	stream.on('end', function(){
 		if ( completed === false ) {
 			completed = true
 			return next(null, data)
 		}
 	})
-	response.on('error', function(err){
+	stream.on('error', function(err){
 		if ( completed === false ) {
 			completed = true
 			return next(err)
@@ -45,7 +45,7 @@ var readstream = require('./readstream.js')
 module.exports = function(url, next){
 	var completed = false
 	var request = require('http').get(url, function(response) {
-		readstream(request, function(err, data){
+		readstream(response, function(err, data){
 			if ( completed === false ) {
 				completed = true
 				return next(err, data)
