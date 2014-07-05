@@ -34,7 +34,9 @@ If this is over your head, ask a mentor or try whatever way you think is best. I
 ----------------------------------------------------------------------
 ## BONUS POINTS
 
-There are several interesting things going on in this exercise. Bonus points if you can answer the following questions:
+Once you've finished the exercise, there are a few bonus points you can get.
+
+There are several interesting things going on in this exercise, can you answer the following?
 
 1. Why would throwing an error in our `fetchall` module cause an unexpected state?
 
@@ -42,6 +44,7 @@ There are several interesting things going on in this exercise. Bonus points if 
 
 3. Why do we still need to check for multiple completions of our `fetchall` module when calling it in our `app` module?
 
+Once you've tried answered those questions, validate your assumptions by comparing them with the best practices provided by the [Error Handling in Node.js](http://joyent.com/developers/node/design/errors) guide issued by Joyent.
 
 
 ----------------------------------------------------------------------
