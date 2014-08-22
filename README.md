@@ -1,6 +1,8 @@
-# Error School
+# Node Fail Safe
 
-Learn how to handle errors like a pro in node.js
+Learn how to handle errors like a pro in node.js.
+
+[Instructions.](https://gist.github.com/balupton/4721905fe5d51c541660)
 
 
 <!-- LICENSE/ -->
